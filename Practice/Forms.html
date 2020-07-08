@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+         
+     </head>s
+     <body>
+         <form class="form" autocomplete="on" method="get" accept-charset="utf-8">
+             <div style="color:darkblue">A Simple Form</div>
+            <i><div style="color:lightblue">Form Fundamentals</div></i>
+             <fieldset>
+                 <legend><span>Customer Info</span></legend>
+                 
+                 <label for="name">Name:</label>
+                 <input type="text" name="cusname" id="name" placeholder="Enter your name" autofocus="on" required="" /><br><br>
+                 
+                 <label for="Telephone">Telephone:</label>
+                 <input type="tel" name="telephone" id="Telephone" placeholder="Pattern: 234-567-8910" required="required" 
+                 pattern="(([0-9]{3})(-[0-9]{3})(-[0-9]{4}))"/><br><br>
+                 
+                <label for="Email address">Email address:</label>
+                 <input type="email" name="mail"  multiple="required" placeholder="Enter your email address" required/>
+             
+             </fieldset>
+             
+             <fieldset>
+                 <legend><span>
+                     Books
+                 </span></legend>
+                 
+                 <input type="text" name="book" id="book" list="books" />
+                 <datalist id="books">
+                     <option value="HTML5 - Bruce Lawson and Remy Sharp"></option>
+                     <option value="Up and Running - Mark Pilgrim"></option>
+                    <option value="Head First HTML5 Programming - Eric Freeman"></option>
+                     <option value="Mastering HTML,CSS and Javascript - Laura Lemay"></option>
+                 </datalist>
+                 <label for="quantity">Quantity</label>(Maximum 5):
+                 <input type="number" name="quantity" id="quantity" value="number" max="5" min="1" />
+             </fieldset>
+            <input type="submit" name="submit" id="submit" value="submit" />
+             
+         </form>
+     </body>
+ </html>
