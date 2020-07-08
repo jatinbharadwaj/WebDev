@@ -1,0 +1,77 @@
+/* @import "style.css" */
+
+/* universal */
+*{
+    font-size: 20px;
+    color: blueviolet;
+}
+h1{
+    color: yellowgreen;
+    background-color: cornflowerblue;
+}
+p{
+    color: green;
+}
+/* paragraph k inside vla span */
+p span{
+    color:orange;
+}
+li{
+    color:black;
+}
+/* ID */
+#heading{
+    background-color: papayawhip;
+}
+/* class */
+.bluecolor{
+    color: blue;
+}
+/* Combinators */
+/* > child last element p apply hoga yha li pey */
+ul>li{
+
+     font-size:25px; 
+}
+/* + Immediate Sibling */
+li+li{
+    color:magenta;
+}
+/* ~General Sibling */
+li~li{
+
+}
+/* attributes */
+a[href]{
+    color:yellow;
+}
+li[class]>span{
+    color:black;
+}
+/* : selectors*/
+
+li:first-child{
+    font-size:40px;
+}
+
+/* Multiple Elements Together */
+li:first-child,li:last-child{
+    font-size: 40px;
+}
+
+/* substring matching */
+/* ^=,$=,*= */
+/* startin with ending with anyhwere resp. */
+a[href^='http']{
+    color:pink;
+}
+
+/*  
+    nth 
+    an+b, b:offset* and a:interval 
+    a->interval
+    b->starting index
+*/
+li:nth-child(2n+3){
+    font-style: italic;
+}
