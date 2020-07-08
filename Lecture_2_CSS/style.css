@@ -39,7 +39,7 @@ li+li{
 }
 /* ~General Sibling */
 li~li{
-
+    color:black;
 }
 /* attributes */
 a[href]{
