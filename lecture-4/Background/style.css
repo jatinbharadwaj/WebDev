@@ -1,0 +1,9 @@
+.div{
+    background-color: orchid;
+    background-image: url("anime.jpg");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 1000px;
+}
