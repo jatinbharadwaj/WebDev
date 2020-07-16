@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+.phone_bar{
+    background-color: turquoise;
+    height: 50px;
+    width: 100%;
+    position: static;
+    font-size: xx-large;
+    text-align: center;
+    padding: 0.2em;
+}
+.container{
+    height:50%;
+    width: 50%;
+    position: relative;
+    margin-left: 30%;
+    align-content: center;
+}
+  
+  div {
+    position: sticky;
+    top: 10px;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+  }
+  .name {
+    background: #42275a; 
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  
+    background: linear-gradient(to right, #734b6d, #42275a); 
+    color:white
+  }
+  
+  h1 {
+    margin: 0px;
+    padding: 5px;
+    padding-left: 22px;
+  }
+
+  .container{
+      length:
+  }
+ul{
+    list-style-type: none;
+}
