@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#FFFF66 ;
+    perspective:800px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    position:fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffd823;
+    margin: 0;
+    height:70px;
+    width:100%;
+    z-index:600;
+}
+
+h1{
+    font-size: 30px;
+    -webkit-text-fill-color: red; 
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: blue;
+}
+
+h5
+{
+    -webkit-text-fill-color: black; 
+}
+
+.navbar img{
+    float:left;
+    margin-left:100px;
+    height: 100%;
+    width:5%;
+    min-width: 55px;
+    max-width: 55px;
+}
+
+.shadow{  
+        color: #f3c910b2;
+        letter-spacing: 0.05em;
+        text-shadow: 4px 4px 0px #ecdd058f, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+    
+    
+
+.container{
+    margin:80px;
+    position:absolute;
+    height:50%;
+    width: 80%;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+
+
+
+
+.side_b,
+.side_a{
+    /* background-color: teal; */
+    background: #e96443;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0.5em;
+    position: absolute;
+    width:300px;
+    height:350px;
+    align-content: center;
+    backface-visibility: hidden;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.side_a{
+   
+    z-index:100;
+}
+.side_b{ 
+    z-index: 50;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+}
+.side_a img,
+.side_b img{
+    position: absolute;
+    width:80%;
+    height: 70%;
+    backface-visibility: hidden;
+   
+}
+.side_b:hover,
+.side_a:hover{
+
+}
+.flex-item {
+    border-radius: 0.5em;
+    background: tomato;
+    width: 300px;
+    height: 350px;
+    margin-top: 10px;
+    text-align: left;
+    transition: all 2s;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+.flex-item:hover{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    
+}
+
+.flex-item p{
+   margin: 245px 20px 10px 20px;
+   font-family: app;
+   color: white;
+   text-align: justify;
+   overflow: hidden;
+}
+
+.monster-minutia {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    margin: 15px 20px 10px;
+    color: whitesmoke;
+}
+
+.monster-minutia>span {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 0 2px;
+}
+
+.monster-description {
+    color: ivory;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 0 20px 20px;
+}
+
+.button{
+    font-size: 18px;
+    border-radius: 0.4em;
+    height: 90px;
+    width: 200px;
+    background-color: whitesmoke;
+    color: black;
+    padding:0.2em;
+    text-decoration: none;
+    text-align: center;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin-left: 30%;
+    opacity:90%;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+}
