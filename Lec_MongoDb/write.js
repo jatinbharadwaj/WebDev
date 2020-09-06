@@ -1,24 +1,37 @@
 const {MongoClient} = require('mongodb')
-const DP_PATH = 'mongodb://localhost:27017'
+const DB_PATH = 'mongodb://localhost:27017'
 
-MongoClient.connect(DP_PATH,(err,client)=>{
+MongoClient.connect(DB_PATH,(err,client)=>{
     if(err) throw err
     // console.log('Connected')
-
-    const testdb = client.db('testdb') 
+    const testdb = client.db('testdb')
     const people = testdb.collection('people')
 
-    //insert data
     people.insertOne({
         name:'Jatin',
-        city:'delhi',
-        age:24
+        city:'Jharkand',
+        age:20
     },(err,result)=>{
         if(err) throw err
-        console.log(result.ops)
+        console.log(result)
     })
 
+    people.insertMany([{
+        name:'Anmol',
+        city:'Jharkand',
+        age:30
+    },{
+        name:'Samarpan',
+        city:'Delhi',
+        age:20
+    },{
+        name:'Harmanjeet',
+        city:'Banglore',
+        age:24
+    }],(err,result)=>{
+        if(err) throw err
+        console.log(result)
+    })
 
     client.close()
 })
-
